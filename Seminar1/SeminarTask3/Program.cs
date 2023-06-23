@@ -1,6 +1,6 @@
 ﻿Console.WriteLine("введите число");
-
-a = int.Parse (Console.ReadLine());
+int a;
+a = int.Parse(Console.ReadLine());
 
 if (a == 1)
 {
@@ -30,4 +30,4 @@ else if (a == 7)
 {
     Console.WriteLine("воскресение");
 }
-else {Console.WriteLine("нет такого дня");}
+else Console.WriteLine("нет такого дня");

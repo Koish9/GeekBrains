@@ -1,4 +1,5 @@
-﻿a = int.Parse(Console.ReadLine());
+﻿int a,b;
+a = int.Parse(Console.ReadLine());
 b = -a;
 
 while (b <= a)
