@@ -9,4 +9,4 @@ if (a == b * b)
 {
     Console.WriteLine("да");
 }
-else {Console.WriteLine("нет");}
+else {Console.WriteLine("нет");}     
