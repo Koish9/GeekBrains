@@ -1,10 +1,14 @@
 ﻿// Напишите прогшрамму которая принимает на вход число (>0) и выводит все числа от 1 до этого числа
 Console.Write("Введите число: ");
-int number = int.Parse(Console.ReadLine());
+int number = Convert.ToInt32(Console.ReadLine());
 
-int index = 1;
-while (index <= number)
+int evenNumber = 2;
+
+if(number > 1)
 {
-    Console.WriteLine(index);
-    index = index + 1;
+    while(evenNumber <= number)
+    {
+        Console.Write(evenNumber + ", ");
+        evenNumber = evenNumber + 2;
+    }
 }
