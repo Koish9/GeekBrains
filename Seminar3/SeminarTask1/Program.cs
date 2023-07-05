@@ -17,6 +17,6 @@ void PrintMassage(string message)
 PrintMassage("Начало работы");
 
 int num1 = 10;
-int num2 = 2;
+int num2 = 2;       
 int mySum = GetSum(num1, num2);
 PrintMassage(mySum.ToString());
