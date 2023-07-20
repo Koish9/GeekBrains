@@ -1,24 +1,15 @@
-﻿// Напишите программу, которая будет преобразовывать десятичное число в двоичное.
-void GetBinary(int number)
+﻿// Задача 42: Напишите программу, которая будет преобразовывать десятичное число в двоичное.
+
+Console.WriteLine("Введите число ");
+int dec = int.Parse(Console.ReadLine());
+string binary = string.Empty;
+
+while(dec != 0)
 {
-    int temp  = 0;
-    int counter = 0;
-    string str = String.Empty;
-    while (number > 0)
-    {
-        temp = number % 2;
-        number /= 2;
-        str = temp + " " + str;
-    }
-    Console.Write(str);
+    int mod = dec%2;
+    binary = mod.ToString() + binary;
+    dec = dec/2;
 }
 
 
-
-
-
-
-
-Console.Write("Введите десятичное число: ");
-int number = int.Parse(Console.ReadLine());
-GetBinary(number);      
+Console.WriteLine(binary);

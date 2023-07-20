@@ -1,14 +1,14 @@
 ﻿// Не используя рекурсию выведите первые н чисел фибоначчи первые два числа фибоначчи 0 и 1
 
-void GetFibonacci()
+
+Console.WriteLine("Введите число N");
+int N = int.Parse(Console.ReadLine());
+int[] array = new int[N];
+array[0] = 0;
+array[1] = 1;
+Console.Write(array[0] + " " + array[1] + " ");
+for (int i = 2; i < N; i++)
 {
-    int F = 0;
-    Console.Write("Введите десятичное число: ");
-    int N = int.Parse(Console.ReadLine());
-    for(int i = 1; i <= N; i+= F)
-    {
-        F = (i - F);
-        Console.Write(" " + F); 
-    }
+    array[i] = array[i - 1] + array[i - 2];
+    Console.Write(array[i] + " ");
 }
-GetFibonacci();
